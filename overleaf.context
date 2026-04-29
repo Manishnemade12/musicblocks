@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Manish Nemade} \\ \vspace{1pt}
+    \small+91 9284308812 $|$ \href{manishnemade7@gmail.com}{\underline{manishnemade7@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/manish-nemade-aaa69b28a/}{\underline{linkedin.com/in/Manish-Nemade}} $|$
+    \href{https://github.com/Manishnemade12}{\underline{github.com/Manishnemade12}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Frontend Developer with hands-on internship experience building interactive web apps using JavaScript, Canvas, and React. Proficient in rendering optimization, event handling, and large-scale codebase refactoring, with a focus on maintainable UI.
+}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {G H Raisoni College of Engineering and Management, Jalgaon}{Aug. 2023 -- May 2027}
+      {Bachelor of Technology in Computer Science}{CGPA : 8.37}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FullStack Engineering Intern}{Oct 2025 -- March 2026}
+      {Melsta Studio Pvt. Ltd}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed multiple \textbf{interactive UI modules} using a scalable \textbf{component-based architecture} with reusable, well-structured JS components.}
+        \resumeItem{Improved performance through \textbf{memoization} (useMemo, useCallback) and \textbf{code splitting}, reducing canvas render overhead by \textbf{20\%}.}
+        \resumeItem{Implemented \textbf{lazy loading} and client-side caching strategies, cutting redundant API calls and lowering backend load by \textbf{30\%}.}
+        \resumeItem{Built \textbf{mobile-first, responsive} UI layouts ensuring consistent cross-browser experience across all modules.}
+        \resumeItem{Integrated \textbf{REST APIs} using async/await and axios with proper loading, error, and success state handling.}
+        \resumeItem{Engaged with \textbf{CI workflows}, resolving merge conflicts and writing frontend test cases to maintain build stability.}
+        \resumeItem{\textbf{Technologies:} JavaScript (ES6+), React.js, HTML5 Canvas, CircleCI}
+      \resumeItemListEnd
+
+    \vspace{7pt}
+    \resumeProjectHeading
+      {\textbf{Layer5} $|$ \emph{React.js, JavaScript} \hspace{10pt} \small{Open Source Developer}}{}
+          \vspace{-8pt}
+      \resumeItemListStart
+            \resumeItem{Fixed \textbf{scroll listener memory leaks} in SPA navigation by adding named handlers with \texttt{useEffect} cleanup returns, preventing accumulation across route transitions. \href{https://github.com/layer5io/layer5/pull/7617}{\underline{\#7611}}}
+        \resumeItem{Migrated \textbf{27 raw \texttt{<img>} tags} to Gatsby's \texttt{StaticImage} across 3 Kanvas files, enabling optimized image delivery and updating styled-component selectors. \href{https://github.com/layer5io/layer5/pull/7619}{\underline{\#7612}}}
+        \resumeItem{Built \textbf{\texttt{useWebhookSubmit} hook} to centralize axios submission; refactored 3 forms to prevent false-positive success UI on async failures. \href{https://github.com/layer5io/layer5/pull/7537}{\underline{\#7537}}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+\resumeProjectHeading
+    {\textbf{Pregwell — Pregnancy Wellness Platform} $|$ \emph{React.js, Material UI, Framer Motion, Chart.js}}
+    {\href{https://github.com/Manishnemade12/Pregwell}{\underline{GitHub}} \;
+     \href{https://pregwell.vercel.app/}{\underline{Live}}}
+    \vspace{-8pt}
+    \resumeItemListStart
+      \resumeItem{Built \textbf{responsive} dashboard with week-by-week tracking and \textbf{Chart.js} Canvas-rendered metrics}
+      \resumeItem{Implemented \textbf{role-based} user flows with recommendations, appointments, and community forums}
+      \resumeItem{Managed app-wide state for \textbf{auth and tracking} using \textbf{React Context} and React Router DOM}
+      \resumeItem{Handled complex forms with \textbf{Formik and Yup} validation across signup and scheduling screens}
+    \resumeItemListEnd
+
+  \vspace{4pt}
+  \resumeProjectHeading
+    {\textbf{Binkeyit} $|$ \emph{React.js, Tailwind CSS, Node.js, Express.js, MongoDB}}
+    {\href{https://github.com/Manishnemade12/Binkeyit---quick-ecommerce}{\underline{GitHub}} \;
+     \href{https://binkeyit-quick-ecommerce.vercel.app/}{\underline{Live}}}
+    \vspace{-8pt}
+    \resumeItemListStart
+      \resumeItem{Built \textbf{responsive, mobile-first} user and admin dashboards using reusable \textbf{component-based} React architecture}
+   \resumeItem{Managed UI state for \textbf{auth, cart, and orders} using \textbf{React Context} and hooks}
+\resumeItem{Integrated \textbf{REST APIs} via \textbf{Axios} with full \textbf{async handling} — loading, error, and success states}
+      \resumeItem{Implemented \textbf{Stripe} checkout flow with cart to payment and real-time UI feedback across browsers and screen sizes}
+    \resumeItemListEnd
+
+  \vspace{-3pt}
+\resumeProjectHeading
+    {\textbf{EdTech — Learning Productivity Platform} $|$ \emph{React.js, Node.js, Socket.io, WebRTC}}
+    {\href{https://github.com/Manishnemade12/frontend-ghack}{\underline{GitHub}} \;
+     \href{https://frontend-ghack-xggv.vercel.app/}{\underline{Live}}}
+    \vspace{-8pt}
+    \resumeItemListStart
+      \resumeItem{Built \textbf{real-time study rooms} with \textbf{WebRTC} video and \textbf{Socket.io} event-driven messaging}
+      \resumeItem{Implemented \textbf{Canvas-based} analytics dashboard with live progress charts and \textbf{gamification} streaks}
+      \resumeItem{Managed \textbf{JWT auth}, friend system, and per-user state using \textbf{React Context} and REST APIs}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), HTML5, CSS3, TypeScript} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Next.js, Konva.js, Canvas 2D API} \\
+     \textbf{Tools \& Platforms}{: Git, GitHub, Jest, ESLint, CircleCI} \\
+     \textbf{Other}{: Canvas Rendering, Event Systems, REST APIs, RequireJS, Component Architecture}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
